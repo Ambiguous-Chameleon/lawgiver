@@ -1,0 +1,1 @@
+$function code:item/lawgiver/mode/$(lawgiver_mode)/shoot

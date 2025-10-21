@@ -1,0 +1,2 @@
+execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{movement:{fall_distance:{min:10,max:999}}}} run tag @s add Falling
+execute as @s[tag=Falling,tag=!ACLib.Force] if predicate ac_lib:on_ground run function code:item/lawgiver/mode/cryogenic/shatter

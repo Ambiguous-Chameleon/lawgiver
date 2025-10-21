@@ -1,0 +1,1 @@
+rotate @s facing entity @n[distance=..20,type=minecraft:marker,tag=FaceThis,tag=PlayerMotion]

@@ -1,0 +1,1 @@
+function ac_lib:effect/damage/generic/do {"damage":"7","type":"minecraft:generic"}

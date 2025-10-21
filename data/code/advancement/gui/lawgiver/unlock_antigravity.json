@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:clock",
+      "components": {
+        "minecraft:item_model": "minecraft:lawgiver/advancement/icon_antigravity",
+        "minecraft:item_name": {
+          "text": "Antigravity",
+          "color": "white",
+          "italic": false
+        }
+      }
+    },
+    "title": "Unlock Antigravity",
+    "description": {
+      "text": "Find and install the Antigravity Data Chip",
+      "color": "white",
+      "italic": false
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "code:gui/lawgiver/unlock_grenade",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

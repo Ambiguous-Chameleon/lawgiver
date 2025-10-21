@@ -1,0 +1,1 @@
+attribute @s minecraft:movement_speed modifier remove ac_lib:stop_movement

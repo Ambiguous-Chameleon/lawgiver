@@ -1,0 +1,1 @@
+function ac_lib:effect/damage/generic/do {"damage":"4","type":"ac_lib:generic_nc"}

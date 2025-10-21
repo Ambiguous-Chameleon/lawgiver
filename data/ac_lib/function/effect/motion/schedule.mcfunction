@@ -1,0 +1,1 @@
+execute as @e[tag=GetMotion] at @s run function ac_lib:effect/motion/get

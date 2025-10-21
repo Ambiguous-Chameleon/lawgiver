@@ -1,0 +1,3 @@
+execute if score @s RCCooldown matches 1.. run return fail
+execute if items entity @s weapon.mainhand minecraft:clock[minecraft:custom_data~{Lawgiver:1b}] at @s run function code:item/lawgiver/shoot/get_mode {"slot":"SelectedItem"}
+execute if items entity @s weapon.offhand minecraft:clock[minecraft:custom_data~{Lawgiver:1b}] at @s run function code:item/lawgiver/shoot/get_mode {"slot":"equipment.offhand"}

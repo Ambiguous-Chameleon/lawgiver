@@ -1,0 +1,1 @@
+$title @s actionbar [{"text":"[ ","color":"dark_gray","italic":true},{"text":"MODE: ","color":"gray","italic":false},{"text":"$(message)","color":"dark_red","italic":false},{"text":" | ","color":"dark_gray","italic":true},{"text":"AMMO: ","color":"gray","italic":false},{"text":"$(ammo)","color":"yellow","italic":false},{"text":" ]","color":"dark_gray","italic":true}]

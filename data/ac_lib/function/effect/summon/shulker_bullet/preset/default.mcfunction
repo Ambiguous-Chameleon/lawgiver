@@ -1,0 +1,2 @@
+# Default shulker bullet, similar to those shot by Shulkers
+function ac_lib:effect/summon/shulker_bullet/prep {"mode":"step","power":"1","steps":"30","target":"@p[gamemode=!creative,gamemode=!spectator]","x_spread":"0","y_spread":"0"}

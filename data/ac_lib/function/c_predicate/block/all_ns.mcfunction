@@ -1,0 +1,2 @@
+# Checks if all blocks by this entity's feet are non_solid blocks.
+execute if block ~-0.5 ~-0.51 ~-0.5 #ac_lib:non_solid if block ~0.5 ~-0.51 ~-0.5 #ac_lib:non_solid if block ~-0.5 ~-0.51 ~0.5 #ac_lib:non_solid if block ~0.5 ~-0.51 ~0.5 #ac_lib:non_solid run return 1

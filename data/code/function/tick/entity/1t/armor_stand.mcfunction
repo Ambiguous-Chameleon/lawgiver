@@ -1,0 +1,1 @@
+execute at @s[tag=LawgiverGrenade] run function code:item/lawgiver/tick/1t

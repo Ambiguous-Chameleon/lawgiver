@@ -1,0 +1,2 @@
+data merge storage minecraft:game_ref {Data:{raycast:{dist:6,block_set:["minecraft:brewing_stand"],function1:"ac_lib:mechanic/find/brewing_stand/found"}}}
+function ac_lib:effect/raycast/general/prep with storage minecraft:game_ref Data.raycast

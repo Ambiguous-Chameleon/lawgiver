@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:clock",
+      "components": {
+        "minecraft:item_model": "minecraft:lawgiver/advancement/icon_sunburst",
+        "minecraft:item_name": {
+          "text": "Sunburst",
+          "color": "white",
+          "italic": false
+        }
+      }
+    },
+    "title": "Unlock Sunburst",
+    "description": {
+      "text": "Obtain all other Lawgiver modes",
+      "color": "white",
+      "italic": false
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "code:gui/lawgiver/unlock_party",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+execute summon minecraft:marker at @s run function code:item/lawgiver/mode/hellfire/summon_arrow/1

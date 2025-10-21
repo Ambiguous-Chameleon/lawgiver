@@ -1,0 +1,1 @@
+give @s minecraft:clock[minecraft:custom_data={Lawgiver:1b,Mode:"semi",Message:"Semi Auto",PlayerID:0},minecraft:item_model="minecraft:lawgiver",minecraft:item_name=[{"text":"Lawgiver ","color":"white"},{"text":"✪","color":"dark_red"}],minecraft:consumable={"consume_seconds": 999999,"has_consume_particles":false},minecraft:max_stack_size=1]

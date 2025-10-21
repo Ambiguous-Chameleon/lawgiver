@@ -1,0 +1,11 @@
+Stops entity movement
+
+
+
+*** EXAMPLES ***
+****************
+
+~~~~~
+/function ac_lib:effect/vanilla/attribute/movement_speed/stop/do
+/function ac_lib:effect/vanilla/attribute/movement_speed/stop/remove
+~~~~~

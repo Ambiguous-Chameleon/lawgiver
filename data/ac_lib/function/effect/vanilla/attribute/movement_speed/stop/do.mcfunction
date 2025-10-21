@@ -1,0 +1,1 @@
+attribute @s minecraft:movement_speed modifier add ac_lib:stop_movement -1 add_value

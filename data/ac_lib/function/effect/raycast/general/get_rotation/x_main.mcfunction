@@ -1,0 +1,2 @@
+execute if score GameRef.RSpreadX TempValue1 matches ..-1 rotated ~-1 ~ run function ac_lib:effect/raycast/general/get_rotation/x_left
+execute if score GameRef.RSpreadX TempValue1 matches 1.. rotated ~1 ~ run function ac_lib:effect/raycast/general/get_rotation/x_right

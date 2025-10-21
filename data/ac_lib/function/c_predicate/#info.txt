@@ -1,0 +1,11 @@
+This is a collection of custom-made "predicates" that can check for things ordinary predicates cannot
+
+*** EXAMPLES ***
+****************
+Works similarly to how regular predicates work, except we're testing for the output result of a function
+
+~~~~~
+/execute if function ac_lib:c_predicate/mob_griefing run say Mob Griefing is enabled
+
+/execute unless function ac_lib:c_predicate/mob_griefing run say Mob Griefing is disabled
+~~~~~

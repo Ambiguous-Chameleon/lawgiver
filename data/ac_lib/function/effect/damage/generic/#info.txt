@@ -1,0 +1,18 @@
+Damages the executing entity
+
+*** Input parameters ***
+
+- "damage" <int>  |  Ex. {"damage":"10"}
+Amount of damage (in half-hearts) to apply to the entity
+
+- "type" <damage_type>  |  Ex. {"type":"minecraft:generic"}
+The type of damage to apply
+
+
+
+*** Examples ***
+
+~~~~~
+Damages the entity for 3 1/2 hearts
+/function ac_lib:effect/damage/generic/do {"damage":"7","type":"minecraft:generic"}
+~~~~~

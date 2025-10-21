@@ -1,0 +1,39 @@
+Summons a shulker bullet
+
+*** Input parameters ***
+
+- "mode" step|motion
+Travel method the projectile will use. "step" follows a grid-based path to reach it's target, "motion" fires this forward as a regular projectile
+
+- "power"
+Travel speed of the projectile
+
+- "steps"
+How many "steps" it takes to reach the target
+
+- "target"
+The target this projectile will pursue
+(if mode is set to step)
+
+- "x_spread"
+Inaccuarcy of the shot along x axis, represented as a range in degrees
+(if mode is set to motion)
+
+- "y_spread"
+Inaccuarcy of the shot along y axis, represented as a range in degrees
+(if mode is set to motion)
+
+
+
+*** Examples ***
+
+~~~~~
+/function ac_lib:effect/summon/shulker_bullet/prep {"mode":"step","power":"1","steps":"30","target":"@p","x_spread":"0","y_spread":"0"}
+~~~~~
+
+
+Some pre-configured presets can also be called to
+
+~~~~~
+/function ac_lib:effect/summon/shulker_bullet/preset/default
+~~~~~

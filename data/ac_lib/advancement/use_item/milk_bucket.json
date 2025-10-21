@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:milk_bucket"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "code:ac_lib/advancement/use_item/milk_bucket"
+  }
+}

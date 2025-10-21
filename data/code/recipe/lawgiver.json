@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "iii",
+    "chr",
+    "  i"
+  ],
+  "key": {
+    "i": [
+      "minecraft:iron_ingot"
+    ],
+    "c": [
+      "minecraft:crossbow"
+    ],
+    "h": [
+      "minecraft:heavy_core"
+    ],
+    "r": [
+      "minecraft:redstone_block"
+    ]
+  },
+  "result": {
+    "id": "minecraft:clock",
+    "components": {
+      "minecraft:custom_data": "{Lawgiver:1b,Mode:\"semi\",Message:\"Semi Auto\",PlayerID:0}",
+      "minecraft:item_model": "minecraft:lawgiver",
+      "minecraft:item_name": {
+        "text": "Lawgiver ",
+        "type": "text",
+        "extra": [
+          {
+            "text": "✪",
+            "color": "dark_red"
+          }
+        ],
+        "color": "white",
+        "italic": false
+      },
+      "minecraft:consumable": {
+        "consume_seconds": 999999,
+        "animation": "none",
+        "has_consume_particles": false
+      },
+      "minecraft:max_stack_size": 1
+    },
+    "count": 1
+  }
+}

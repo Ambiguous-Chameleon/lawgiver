@@ -1,0 +1,3 @@
+$execute if data storage ac_lib:music data.entities[{uuid:$(uuid)}].songs[{name:"$(name)"}] if data storage ac_lib:music {data:{temp:{toggle:"true"}}} run tag @s add Toggle
+$execute as @s[tag=Toggle] run function ac_lib:mechanic/music/remove/main {"name":"$(name)"}
+$execute as @s[tag=!Toggle] run data merge storage ac_lib:music {data:{entities:[{uuid:$(uuid),songs:[{name:"$(name)",max_seconds:$(max_seconds),particles:"$(particles)",loop:"$(loop)"}]}]}}

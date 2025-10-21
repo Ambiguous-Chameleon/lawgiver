@@ -1,0 +1,1 @@
+$particle minecraft:entity_effect{color:$(color)} ~$(x) ~$(y) ~$(z) 0.1 0.1 0.1 1 0 force @a

@@ -1,0 +1,4 @@
+# Checks for unchecked chunks. Comment out when not in use (ACL)
+#execute at @s if dimension minecraft:overworld positioned ~ -64 ~ unless entity @e[distance=..16,type=minecraft:marker,tag=Chunk] summon minecraft:item_frame at @s run function ac_lib:utility/chunk/find/calc
+#execute at @s if dimension minecraft:the_nether positioned ~ 0 ~ unless entity @e[distance=..16,type=minecraft:marker,tag=Chunk] summon minecraft:item_frame at @s run function ac_lib:utility/chunk/find/calc
+#execute at @s if dimension minecraft:the_end positioned ~ 0 ~ unless entity @e[distance=..16,type=minecraft:marker,tag=Chunk] summon minecraft:item_frame at @s run function ac_lib:utility/chunk/find/calc

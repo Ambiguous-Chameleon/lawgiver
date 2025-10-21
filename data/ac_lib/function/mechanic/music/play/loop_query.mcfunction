@@ -1,0 +1,2 @@
+$execute if data storage ac_lib:music {data:{temp:{song:{loop:"true"}}}} run scoreboard players reset @s AC.Music.$(name)
+$execute if data storage ac_lib:music {data:{temp:{song:{loop:"false"}}}} run function ac_lib:mechanic/music/remove/main {"name":"$(name)"}

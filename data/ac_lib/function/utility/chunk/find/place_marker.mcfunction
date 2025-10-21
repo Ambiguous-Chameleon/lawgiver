@@ -1,0 +1,3 @@
+$execute if dimension minecraft:overworld positioned ~-$(x) -64 ~-$(z) unless entity @n[distance=..1,type=minecraft:marker,tag=Chunk] run summon minecraft:marker ~ ~ ~ {Tags:["ACLib","Marker","Chunk","FirstOverworld"]}
+$execute if dimension minecraft:the_nether positioned ~-$(x) 0 ~-$(z) unless entity @n[distance=..1,type=minecraft:marker,tag=Chunk] run summon minecraft:marker ~ ~ ~ {Tags:["ACLib","Marker","Chunk","FirstNether"]}
+$execute if dimension minecraft:the_end positioned ~-$(x) 0 ~-$(z) unless entity @n[distance=..1,type=minecraft:marker,tag=Chunk] run summon minecraft:marker ~ ~ ~ {Tags:["ACLib","Marker","Chunk","FirstEnd"]}

@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:clock"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "code:ac_lib/use_item/clock"
+  }
+}

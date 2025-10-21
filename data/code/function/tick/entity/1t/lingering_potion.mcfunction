@@ -1,0 +1,1 @@
+execute at @s[tag=LawgiverGas] run particle entity_effect{color:[0.502,1.000,0.000,1.00]} ~ ~ ~ 0 0 0 0 0 normal

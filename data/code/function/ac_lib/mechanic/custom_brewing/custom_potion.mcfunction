@@ -1,0 +1,7 @@
+# Removes 1 of the ingredient and places as many potions as there are awkward potions
+function code:ac_lib/mechanic/custom_brewing/count_remove
+
+# Custom potions here
+#execute if data block ~ ~ ~ {Items:[{Slot:0b,components:{"minecraft:potion_contents":{potion:"minecraft:awkward"}},count:1,id:"minecraft:potion"}]} run data modify block ~ ~ ~ Items[{Slot:0b}].components set value {"minecraft:custom_data":{CustomPotion:1b},"minecraft:custom_name":{italic:0b,text:"Potion of Awesome"},"minecraft:enchantment_glint_override":1b,"minecraft:potion_contents":{custom_color:0}}
+#execute if data block ~ ~ ~ {Items:[{Slot:1b,components:{"minecraft:potion_contents":{potion:"minecraft:awkward"}},count:1,id:"minecraft:potion"}]} run data modify block ~ ~ ~ Items[{Slot:1b}].components set value {"minecraft:custom_data":{CustomPotion:1b},"minecraft:custom_name":{italic:0b,text:"Potion of Awesome"},"minecraft:enchantment_glint_override":1b,"minecraft:potion_contents":{custom_color:0}}
+#execute if data block ~ ~ ~ {Items:[{Slot:2b,components:{"minecraft:potion_contents":{potion:"minecraft:awkward"}},count:1,id:"minecraft:potion"}]} run data modify block ~ ~ ~ Items[{Slot:2b}].components set value {"minecraft:custom_data":{CustomPotion:1b},"minecraft:custom_name":{italic:0b,text:"Potion of Awesome"},"minecraft:enchantment_glint_override":1b,"minecraft:potion_contents":{custom_color:0}}

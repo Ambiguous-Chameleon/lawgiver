@@ -1,0 +1,30 @@
+Summons a small fireball
+
+*** Input parameters ***
+
+- "acceleration"
+Acceleration of the summoned fireball (default 0.1)
+
+- "render"
+What item the fireball will render as (default minecraft:fire_charge)
+
+- "x_spread"
+Inaccuarcy of the shot along x axis, represented as a range in degrees (default is 0 spread)
+
+- "y_spread"
+Inaccuarcy of the shot along y axis, represented as a range in degrees (default is 0 spread)
+
+
+
+*** Examples ***
+
+~~~~~
+/function ac_lib:effect/summon/small_fireball/prep {"acceleration":"0.25","render":"minecraft:snowball","x_spread":"-2..2","y_spread":"-2..2"}
+~~~~~
+
+
+Some pre-configured presets can also be called to
+
+~~~~~
+/function ac_lib:effect/summon/small_fireball/preset/default
+~~~~~

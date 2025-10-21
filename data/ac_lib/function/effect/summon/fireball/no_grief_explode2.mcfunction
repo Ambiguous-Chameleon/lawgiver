@@ -1,0 +1,1 @@
+$function ac_lib:effect/explode/prep {"type":"ExplodeFireball","radius":"$(explosion_power)","name":"fireball","dx":"1","dy":"1",dz:"1","speed":".1","count":"5","destroy":"false"}

@@ -1,0 +1,30 @@
+Play a song as a moving audio source
+
+*** Input parameters ***
+
+- "name" <song_name> | Ex. {"name":"cool_song"}
+Name of the song that will play
+
+- "max_seconds" <int>  |  Ex. {"max_seconds":"30"}
+How long the song will play before ending
+
+- "particles" <true|false>  |  Ex. {"particles":"false"}
+Whether the source of the music will give off note particles as the song plays
+
+- "loop" <true|false>  |  Ex. {"loop":"true"}
+Whether the song will loop and continuously play
+
+- "toggle" <true|false>  |  Ex. {"toggle":"true"}
+When true, if a call is made to play a certain song, but that song is already playing, it will stop playing instead
+
+
+
+*** Examples ***
+
+~~~~~
+Plays this song for 30 seconds, with note particles, unlooped
+/function ac_lib:mechanic/music/add/main {"name":"cool_song","max_seconds":"30","particles":"true","loop":"false","toggle":"false"}
+
+Songs can also be directly turned off with this
+/function ac_lib:mechanic/music/remove/main {"name":"cool_song"}
+~~~~~

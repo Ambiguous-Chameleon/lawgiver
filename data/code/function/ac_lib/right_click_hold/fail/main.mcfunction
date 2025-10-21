@@ -1,0 +1,1 @@
+execute if score @s FiringSunburst matches 1.. run function code:ac_lib/right_click_hold/fail/list/sunburst

@@ -1,0 +1,1 @@
+$execute positioned ~$(x) ~ ~$(z) run function code:item/lawgiver/mode/hellfire/summon_arrow/3

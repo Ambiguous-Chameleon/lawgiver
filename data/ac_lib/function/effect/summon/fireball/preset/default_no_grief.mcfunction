@@ -1,0 +1,2 @@
+# Default fireball, similar to those fired by a ghast, but without dealing block damage
+function ac_lib:effect/summon/fireball/prep {"acceleration":"0.1","destroy":"false","explosion_power":"1","render":"minecraft:fire_charge","x_spread":"0","y_spread":"0"}

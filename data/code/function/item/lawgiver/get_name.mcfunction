@@ -1,0 +1,1 @@
+$item modify entity @s $(slot_type).$(slot1) {function:"minecraft:set_lore",lore:[{"text":"Sneak-right click for mode menu","color":"gray","italic":false},{"text":""},{"text":"Owner: ","color":"gray","italic":false},{"text":"$(name)","color":"gold","italic":false}],mode:"replace_all"}

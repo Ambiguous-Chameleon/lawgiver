@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " i ",
+    "iri",
+    "igi"
+  ],
+  "key": {
+    "i": [
+      "minecraft:iron_ingot"
+    ],
+    "r": [
+      "minecraft:redstone"
+    ],
+    "g": [
+      "minecraft:gunpowder"
+    ]
+  },
+  "result": {
+    "id": "minecraft:clock",
+    "components": {
+      "minecraft:custom_data": "{LawgiverAmmo:1b}",
+      "minecraft:item_model": "minecraft:lawgiver_ammo",
+      "minecraft:item_name": {
+        "text": "Bullet (Lawgiver)",
+        "type": "text",
+        "color": "white",
+        "italic": false
+      },
+      "minecraft:max_stack_size": 99
+    },
+    "count": 16
+  }
+}

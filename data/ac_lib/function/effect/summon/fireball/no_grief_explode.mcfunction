@@ -1,0 +1,2 @@
+data modify storage minecraft:game_ref Data.ACLib_Fireball.explosion_power set from entity @s data.explosion_power
+function ac_lib:effect/summon/fireball/no_grief_explode2 with storage minecraft:game_ref Data.ACLib_Fireball

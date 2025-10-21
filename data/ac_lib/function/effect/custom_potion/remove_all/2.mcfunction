@@ -1,0 +1,2 @@
+$data modify storage ac_lib:custom_potion_effects data.temp.effect_id set from storage ac_lib:custom_potion_effects data.player$(player_id).effects[$(array_index)].effect_id
+function ac_lib:effect/custom_potion/remove_all/3 with storage ac_lib:custom_potion_effects data.temp

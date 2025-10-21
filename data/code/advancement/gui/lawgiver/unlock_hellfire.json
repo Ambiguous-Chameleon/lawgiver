@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:clock",
+      "components": {
+        "minecraft:item_model": "minecraft:lawgiver/advancement/icon_hellfire",
+        "minecraft:item_name": {
+          "text": "Hellfire",
+          "color": "white",
+          "italic": false
+        }
+      }
+    },
+    "title": "Unlock Hellfire",
+    "description": {
+      "text": "Find and install the Hellfire Data Chip",
+      "color": "white",
+      "italic": false
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "code:gui/lawgiver/unlock_gas",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

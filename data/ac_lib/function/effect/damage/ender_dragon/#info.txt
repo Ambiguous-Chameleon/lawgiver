@@ -1,0 +1,15 @@
+Damages Ender Dragons
+
+*** Input parameters ***
+
+- "damage" <int>  |  Ex. {"damage":"10"}
+Amount of damage (in half-hearts) to apply to the entity
+
+
+
+*** Examples ***
+
+~~~~~
+# Damages the dragon for 20 hearts
+/function ac_lib:effect/damage/ender_dragon/do {"damage":"40"}
+~~~~~

@@ -1,0 +1,2 @@
+$data modify storage minecraft:game_ref data.temp.lawgiver_mode set from entity @s $(slot).components.minecraft:custom_data.Mode
+function code:item/lawgiver/shoot/prep_mode with storage minecraft:game_ref data.temp

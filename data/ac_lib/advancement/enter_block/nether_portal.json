@@ -1,0 +1,14 @@
+{
+    
+    "criteria": {
+        "enterportal": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:nether_portal"
+            }
+        }
+    },
+    "rewards": {
+        "function": "code:ac_lib/advancement/enter_block/nether_portal"
+    }
+}

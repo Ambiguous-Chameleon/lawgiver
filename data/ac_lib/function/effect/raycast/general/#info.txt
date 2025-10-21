@@ -1,0 +1,96 @@
+Performs a raycast. Can be tailored to meet a variety of needs
+
+*** INPUT PARAMETERS ***
+************************
+
+- "dist" <int>  |  Ex. {dist:10}
+Distance of the raycast in blocks
+
+- "function1" <functionname>  |  Ex. {function1:"datapack:my_function"}
+The function to run if the raycast is successful
+
+
+--- If looking for a block ---
+
+- "block_set" [<block1,block2,block3,...>]  |  Ex. {block_set:["minecraft:dirt","minecraft:stone"]}
+Array containing the block(s) the raycast will look for
+
+
+--- If looking for an entity ---
+
+- "tag_set" [<tag1,tag2,tag3>]  |  Ex. {tag_set:[Pig,Animal]}
+Array containing the tag(s) the raycast will look for
+(default looks for any ONE matching tag, resulting in a success)
+
+AND / OR
+
+- "type_set" [<type1,type2,type3>]  |  Ex. {type_set:[zombie,zombie_villager]}
+Array containing the entity type(s) the raycast will look for
+
+
+
+*** OPTIONAL PARAMTERS ***
+**************************
+When not defined, these parameters will use their default settings
+
+- "executor" <this|target|[selector]>  |  Ex. {executor:"@n[tag=Steve]"}
+Who runs the function from "function1" when the raycast is successful
+"this" is the raycaster. "target" is an entity hit by the raycast who matches the parameters in "tag_set" and/or "type_set". "selector" allows defining some other entity to run the function
+(default is "this")
+
+- "ignore_blocks" <true|false>  |  Ex. {ignore_blocks:"true"}
+Whether the raycast should be stopped by solid blocks, or phase right through them
+(default is false)
+
+- "on_block_collide" <true|false>  |  Ex. {on_block_collide:"true"}
+Whether "function1" should be run when the raycast collides with a solid block
+(default is false)
+
+- "particle_cmd" <full particle command>  |  Ex. {particle_cmd:"particle minecraft:happy_villager ~ ~ ~ .1 .1 .1 1 5 force @a"}
+The particles that should display during the raycast
+(default is none)
+
+- "pierce_count" <int>  |  Ex. {pierce_count:3}
+Allows a raycast to hit multiple entities before being ended. Useful for a bullet you might want to pierce multiple mobs, for example
+(default is 1)
+
+- "ray_number" <int>  |  Ex. {ray_number:2}
+The number of times the raycast will be performed
+(default is 1)
+
+- "search_method" <dx|distance>  |  Ex. {search_method:"distance"}
+Whether to use "dx" or "distance", when searching for an entity
+(default is dx)
+
+- "search_value" <int>  |  Ex. {search_value:2}
+The area the search will cover, when searching for an entity
+(default is 0)
+
+- "spread" <x|y>:<range>  |  Ex. {spread:{x:"-5..5",y:"-5..5"}}
+Applies random spread to the raycast along x and/or y axis, rather than raycasting straight ahead
+(default is no spread along either axis)
+
+- "tag_mode":"all"  |  Ex. {tag_mode:"all"}
+Requires that the entity must match ALL provided tags in tag_set
+(by default this is disabled)
+
+
+
+*** EXAMPLES ***
+****************
+To conduct a raycast, all required data must be merged into this storage
+Then, the raycast prep function must be run with this storage
+
+~~~~~
+/data merge storage minecraft:game_ref {Data:{raycast:{dist:12,type_set:[zombie],function1:"datapack:my_function"}}}
+/function ac_lib:effect/raycast/general/prep with storage minecraft:game_ref Data.raycast
+
+/data merge storage minecraft:game_ref {Data:{raycast:{dist:12,type_set:[zombie],tag_set:[Enemy],search_method:"distance",search_value:2,function1:"datapack:my_function",ignore_blocks:true}}}
+/function ac_lib:effect/raycast/general/prep with storage minecraft:game_ref Data.raycast
+
+/data merge storage minecraft:game_ref {Data:{raycast:{dist:5,type_set:[cow,sheep,pig],tag_set:[Pig,Animal],tag_mode:"all",search_method:"dx",search_value:0,function1:"datapack:my_function",particle_cmd:"particle minecraft:smoke"}}}
+/function ac_lib:effect/raycast/general/prep with storage minecraft:game_ref Data.raycast
+
+/data merge storage minecraft:game_ref {Data:{raycast:{dist:5,type_set:[player],search_method:"dx",search_value:0,function1:"datapack:my_function",executor:"target",spread:{x:"-5..5",y:"-5..5"}}}}
+/function ac_lib:effect/raycast/general/prep with storage minecraft:game_ref Data.raycast
+~~~~~

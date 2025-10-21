@@ -1,0 +1,1 @@
+execute at @s[tag=SunburstBeam] run function code:item/lawgiver/mode/sunburst/tick/rotate_beam

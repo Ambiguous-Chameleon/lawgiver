@@ -1,0 +1,2 @@
+$bossbar set ac_lib:custom_effects$(player_id) name [{"text":"$(bossbar_name)$(new_char)","shadow_color":0}]
+$data modify storage ac_lib:custom_potion_effects data.player$(player_id).bossbar.text set value "$(bossbar_name)$(new_char)"

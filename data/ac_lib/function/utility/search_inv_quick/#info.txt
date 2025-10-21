@@ -1,0 +1,24 @@
+Searches player's inventory for an item, outputs success in score of GameRef.Boolean TempValue1
+
+*** INPUT PARAMETERS ***
+************************
+
+- "item" <full item info>  |  Ex. {"item":"minecraft:apple[minecraft:custom_data={Food:1b}]"}
+The item to find. Accepts "*" and "#" as well
+
+
+
+*** EXAMPLES ***
+****************
+All parameters are required. Run below function as a macro
+
+~~~~~
+/function ac_lib:utility/search_inv_quick/do {"item":"minecraft:apple[minecraft:custom_data={Food:1b}]"}
+
+# Then to do something based off of the result:
+/execute if score GameRef.Boolean TempValue1 matches 1 run say found the thing
+
+/execute if score GameRef.Boolean TempValue1 matches 0 run say you don't have the thing, nerd
+
+# GameRef.Boolean TempValue1 will reset automatically
+~~~~~

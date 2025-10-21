@@ -1,0 +1,1 @@
+give @s minecraft:clock[minecraft:custom_data={LawgiverAmmo:1b},minecraft:item_model="minecraft:lawgiver_ammo",minecraft:item_name=[{"text":"Bullet (Lawgiver)","color":"white"}],minecraft:max_stack_size=99] 198

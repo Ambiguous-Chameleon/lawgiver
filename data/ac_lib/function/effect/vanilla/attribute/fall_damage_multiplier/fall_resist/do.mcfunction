@@ -1,0 +1,1 @@
+attribute @s minecraft:fall_damage_multiplier modifier add ac_lib:fall_resist -1 add_multiplied_total

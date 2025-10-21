@@ -1,0 +1,1 @@
+execute summon minecraft:item_frame at @s run function ac_lib:mechanic/find/brewing_stand/summon_marker

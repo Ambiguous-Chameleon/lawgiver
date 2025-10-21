@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:clock",
+      "components": {
+        "minecraft:item_model": "minecraft:lawgiver/advancement/icon_shotgun",
+        "minecraft:item_name": {
+          "text": "Shotgun",
+          "color": "white",
+          "italic": false
+        }
+      }
+    },
+    "title": "Unlock Shotgun",
+    "description": {
+      "text": "Find and install the Shotgun Data Chip",
+      "color": "white",
+      "italic": false
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "code:gui/lawgiver/unlock_laser_beam",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

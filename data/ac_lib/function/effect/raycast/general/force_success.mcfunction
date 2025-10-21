@@ -1,0 +1,1 @@
+# Forces a raycast to perform its passed in function once the raycast is complete.

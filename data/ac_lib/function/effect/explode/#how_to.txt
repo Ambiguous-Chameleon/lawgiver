@@ -1,0 +1,38 @@
+Creates a custom explosion
+
+*** Input parameters ***
+
+- "type"
+Arbitrary, set to whatever you like. Basically just a string that teleports a spawned creeper to the proper location to create the explosion
+
+- "radius"
+Radius of the explosion
+
+- "name"
+Name of the Creeper that explodes. Useful for tailoring death messages if players die to the explosion
+
+- "dx"
+dx of the explosion particles
+
+- "dy"
+dy of the explosion particles
+
+- "dz"
+dz of the explosion particles
+
+- "speed"
+Speed of the explosion particles
+
+- "count"
+Number of explosion particles
+
+- "destroy"
+Whether the explosion should cause block damage
+
+
+
+*** Example ***
+
+~~~~~
+/function ac_lib:effect/explode/prep {"type":"ExplodeSmall","radius":"3","name":"explosion","dx":"1","dy":"1",dz:"1","speed":".1","count":"5","destroy":"false"}
+~~~~~

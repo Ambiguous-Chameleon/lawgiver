@@ -1,0 +1,1 @@
+$execute if data storage ac_lib:custom_potion_effects data.player$(player_id).effects[{effect_id:"$(effect_id)"}] run tag @s add AC.CECheck.S

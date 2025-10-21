@@ -1,0 +1,1 @@
+function ac_lib:effect/freeze/do {"time":"10"}

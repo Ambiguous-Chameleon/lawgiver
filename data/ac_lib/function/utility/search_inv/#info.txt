@@ -1,0 +1,23 @@
+Searches player's inventory for an item, then does something
+
+*** INPUT PARAMETERS ***
+************************
+
+- "item" <full item info>  |  Ex. {"item":"minecraft:apple[minecraft:custom_data={Food:1b}]"}
+The item to find. Accepts "*" and "#" as well
+
+- "locations" [inventory,hotbar,offhand,armor]  |  Ex. {"locations":"[inventory,armor]"}
+Where in the inventory the search will look for the item. Accepts any combination of "inventory" "hotbar" "offhand" "armor"
+
+- "function" <functionname>  |  Ex. {"function":"datapack:my_function"}
+The function to run if the item is found. Runs for every instance the item is located
+
+
+
+*** EXAMPLES ***
+****************
+All parameters are required. Run below function as a macro
+
+~~~~~
+/function ac_lib:utility/search_inv/do {"item":"minecraft:apple[minecraft:custom_data={Food:1b}]","locations":"[inventory,hotbar,offhand]","function":"datapack:my_function"}
+~~~~~

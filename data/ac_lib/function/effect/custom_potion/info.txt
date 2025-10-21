@@ -1,0 +1,29 @@
+Controls custom effects added by this pack
+
+*** INPUT PARAMETERS ***
+************************
+
+- "effect_id" <string>  |  Ex. {"effect_id":"phasing"}
+Id of the potion effect to add
+
+- "duration" <int> | Ex. {"duration":"15"}
+Amount of time in seconds the effect will last
+
+- "char_id" <string>  |  Ex. {"char_id":"\uE002"}
+Texture id of potion icon, as listed in "assets/minecraft/font/defaults.json"
+
+
+
+*** EXAMPLES ***
+****************
+
+~~~~~
+Add an effect
+/function ac_lib:effect/custom_potion/add_effect/do {"effect_id":"phasing","duration":"15","char_id":"\uE002"}
+
+Remove an effect
+/function ac_lib:effect/custom_potion/remove_effect/do {"effect_id":"phasing"}
+
+Remove all custom potion effects
+/function ac_lib:effect/custom_potion/remove_all/do
+~~~~~

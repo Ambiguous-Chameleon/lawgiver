@@ -1,0 +1,14 @@
+Applies recoil to player, like if they fired a weapon
+
+*** Input parameters ***
+
+- "amount" <int> | Ex. {"amount":"5"}
+Amount of recoil to apply, in y degrees
+
+
+
+*** Examples ***
+
+~~~~~
+/function ac_lib:mechanic/music/add/main {"amount":"5"}
+~~~~~

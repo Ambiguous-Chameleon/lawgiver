@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:clock",
+      "components": {
+        "minecraft:item_model": "minecraft:lawgiver/advancement/icon_repulse",
+        "minecraft:item_name": {
+          "text": "Repulse",
+          "color": "white",
+          "italic": false
+        }
+      }
+    },
+    "title": "Unlock Repulse",
+    "description": {
+      "text": "Find and install the Repulse Data Chip",
+      "color": "white",
+      "italic": false
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "code:gui/lawgiver/locked_and_loaded",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

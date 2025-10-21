@@ -1,0 +1,36 @@
+Summons a fireball
+
+*** Input parameters ***
+
+- "acceleration"
+Acceleration of the summoned fireball (default 0.1)
+
+- "destroy"
+Whether the explosion should cause block damage
+
+- "explosion_power"
+Force of explosion on collision (default 1)
+
+- "render"
+What item the fireball will render as (default minecraft:fire_charge)
+
+- "x_spread"
+Inaccuarcy of the shot along x axis, represented as a range in degrees (default is 0 spread)
+
+- "y_spread"
+Inaccuarcy of the shot along y axis, represented as a range in degrees (default is 0 spread)
+
+
+
+*** Examples ***
+
+~~~~~
+/function ac_lib:effect/summon/fireball/prep {"acceleration":"0.25","destroy":"false","explosion_power":"3","render":"minecraft:slime_ball","x_spread":"-2..2","y_spread":"-2..2"}
+~~~~~
+
+
+Some pre-configured presets can also be called to
+
+~~~~~
+/function ac_lib:effect/summon/fireball/preset/default
+~~~~~

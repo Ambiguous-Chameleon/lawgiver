@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item,tag=ACLib.Force,tag=PlayerMotion] at @s run function ac_lib:effect/force/player/backward/rotate_1
+kill @e[type=minecraft:marker,tag=ACLib.Force,tag=PlayerMotion,tag=FaceThis]

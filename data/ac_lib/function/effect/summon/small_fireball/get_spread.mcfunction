@@ -1,0 +1,2 @@
+$execute store result storage minecraft:game_ref Data.ACLib_SFireball.x_spread int 1 run random value $(x_spread)
+$execute store result storage minecraft:game_ref Data.ACLib_SFireball.y_spread int 1 run random value $(y_spread)

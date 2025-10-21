@@ -1,0 +1,1 @@
+execute at @s[tag=Hellfire] run function code:item/lawgiver/mode/hellfire/tick/1t

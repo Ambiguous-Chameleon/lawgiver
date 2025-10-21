@@ -1,0 +1,1 @@
+$data merge entity @s {Motion:[$(x)d,$(y)d,$(z)d]}

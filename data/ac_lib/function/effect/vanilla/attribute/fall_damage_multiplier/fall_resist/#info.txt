@@ -1,0 +1,16 @@
+Removes fall damage
+
+
+
+*** EXAMPLES ***
+****************
+Temp should be used for if the intended target is in the air and you want them to negate fall damage ONCE, but then re-enable fall damage for them after they've landed.
+
+~~~~~
+# Turn fall damage off. More long-term. Entity will maintain their fall resistance until it is switched back off manually
+/function ac_lib:effect/vanilla/attribute/fall_damage_multiplier/fall_resist/do
+/function ac_lib:effect/vanilla/attribute/fall_damage_multiplier/fall_resist/remove
+
+# Temporary fall resistance. Will automatically be switched off once the entity makes contact with the ground
+/function ac_lib:effect/vanilla/attribute/fall_damage_multiplier/fall_resist/temp/do
+~~~~~

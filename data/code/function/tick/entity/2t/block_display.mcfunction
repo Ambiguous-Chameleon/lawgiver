@@ -1,0 +1,2 @@
+# Phasing custom potion effect, phased blocks become solid again when there isn't a phasing entity nearby (ACL)
+execute at @s[tag=Phased] unless entity @e[distance=..3,scores={AC.CE.phasing=1..}] run function ac_lib:effect/custom_potion/list/phasing/block_replace

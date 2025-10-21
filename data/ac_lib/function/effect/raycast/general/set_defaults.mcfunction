@@ -1,0 +1,2 @@
+data remove storage minecraft:game_ref Data.raycast
+data merge storage minecraft:game_ref {Data:{raycast:{ignore_blocks:false,on_block_collide:false,pierce_count:1,ray_number:1,search_method:"dx",search_value:0,selector:"@n[tag=Raycast]"}}}

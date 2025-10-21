@@ -1,0 +1,1 @@
+#execute as @s[scores={x.y.z=1..}] run function code:trigger/x/y/z

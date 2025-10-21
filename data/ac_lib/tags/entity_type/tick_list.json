@@ -1,0 +1,21 @@
+{
+    "values":
+    [
+        "#ac_lib:mobs",
+        "minecraft:area_effect_cloud",
+        "minecraft:armor_stand",
+        "minecraft:arrow",
+        "minecraft:block_display",
+        "#minecraft:boat",
+        "minecraft:fireball",
+        "minecraft:interaction",
+        "minecraft:item",
+        "minecraft:item_display",
+        "minecraft:item_frame",
+        "minecraft:lingering_potion",
+        "minecraft:marker",
+        "minecraft:small_fireball",
+        "minecraft:trident",
+        "minecraft:wither_skull"
+    ]
+}

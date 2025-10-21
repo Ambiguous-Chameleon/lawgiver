@@ -1,0 +1,15 @@
+Freezes the executing entity
+
+*** Input parameters ***
+
+- "time" <int>  |  Ex. {"time":"7"}
+Amount of time in seconds the freeze effect will last
+
+
+
+*** Examples ***
+
+~~~~~
+Freezes the entity for 7 seconds
+/function ac_lib:effect/freeze/do {"time":"7"}
+~~~~~

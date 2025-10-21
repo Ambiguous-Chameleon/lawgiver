@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:clock",
+      "components": {
+        "minecraft:item_model": "minecraft:lawgiver",
+        "minecraft:item_name": {
+          "text": "Lawgiver ",
+          "extra": [
+            {
+              "text": "✪",
+              "color": "dark_red"
+            }
+          ],
+          "color": "white",
+          "italic": false
+        }
+      }
+    },
+    "title": {
+      "text": "Lawgiver"
+    },
+    "description": "Discover new modes by finding Data Chips in chests",
+    "background": "minecraft:block/netherite_block",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
